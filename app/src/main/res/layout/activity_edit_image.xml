@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context="com.studio.makergif.activitys.EditImageActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_preview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1" />
+
+            <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+                android:id="@+id/delay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:dsb_max="30"
+                app:dsb_min="1" />
+
+            <com.studio.makergif.utils.Helve
+                android:id="@+id/tv_frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/s10dp"
+                android:layout_marginLeft="@dimen/s10dp"
+                android:text="1 frames/s"
+                android:textSize="@dimen/s20sp"
+                android:textColor="@color/xanhdark" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rc_effect"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/s120dp"
+                android:layout_marginTop="@dimen/s20dp"
+                android:background="@color/xanhdark1"
+                android:padding="@dimen/s20dp"></android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/s70dp"
+                android:layout_marginBottom="@dimen/s20dp"
+                android:layout_marginTop="@dimen/s20dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:id="@+id/ln_effect"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/bt_bluedrak"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/s65dp"
+                        android:layout_height="@dimen/s65dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_effect" />
+
+                    <com.studio.makergif.utils.Helve
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/s10dp"
+                        android:gravity="center"
+                        android:text="@string/effect"
+                        android:textColor="@color/whitle"
+                        android:textSize="@dimen/s24sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_ads"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s65dp"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:visibility="gone"></RelativeLayout>
+    </LinearLayout>
+
+    <include layout="@layout/layout_process" />
+</FrameLayout>

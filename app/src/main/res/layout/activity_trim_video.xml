@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:rsb="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context="com.studio.makergif.activitys.TrimVideoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <include layout="@layout/toolbar_" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/s20dp">
+
+
+                <VideoView
+                    android:id="@+id/video"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/s8dp"
+                android:layout_marginRight="@dimen/s8dp"
+                android:orientation="vertical">
+
+                <org.florescu.android.rangeseekbar.RangeSeekBar
+                    android:id="@+id/sb_seek"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/s20dp"
+                    android:paddingTop="@dimen/s20dp"
+                    app:showLabels="false"
+                    rsb:activeColor="@color/xanhdark"
+                    rsb:textAboveThumbsColor="@color/xanhdark" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.studio.makergif.utils.Helve
+                        android:id="@+id/tv_start"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="00:00:00"
+                        android:textColor="@color/xanhdark"
+                        android:textSize="@dimen/s18sp" />
+
+                    <com.studio.makergif.utils.Helve
+                        android:id="@+id/tv_second_cut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/xanhdark"
+                        android:textSize="@dimen/s20sp" />
+
+                    <com.studio.makergif.utils.Helve
+                        android:id="@+id/tv_end"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:text="00:01:00"
+                        android:textColor="@color/xanhdark"
+                        android:textSize="@dimen/s18sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/s160dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:id="@+id/ln_trim"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/s70dp"
+                    android:layout_weight="2.5"
+                    android:background="@drawable/bt_bluedrak"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/s65dp"
+                        android:layout_height="@dimen/s65dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_trimvideo" />
+
+                    <com.studio.makergif.utils.Helve
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/s10dp"
+                        android:text="@string/cut_video"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/s24sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_ads"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s65dp"
+            android:visibility="gone"></RelativeLayout>
+    </LinearLayout>
+
+
+    <include layout="@layout/layout_process" />
+</FrameLayout>

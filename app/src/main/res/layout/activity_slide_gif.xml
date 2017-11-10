@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:orientation="vertical"
+    tools:context="com.studio.makergif.activitys.SlideGifActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_margin="@dimen/s20dp"
+                android:id="@+id/iv_gif_max"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/gif_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/s160dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/s16dp"
+            android:paddingLeft="@dimen/s30dp"
+            android:paddingRight="@dimen/s30dp">
+
+
+            <LinearLayout
+                android:id="@+id/ln_fb"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp70"
+                android:layout_marginRight="@dimen/s16dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_bluedrak"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/s40dp"
+                    android:layout_height="@dimen/s40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_fb" />
+
+                <com.studio.makergif.utils.Helve
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/s8dp"
+                    android:text="Facebook"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/s24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_is"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/s70dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_bluedrak"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/s40dp"
+                    android:layout_height="@dimen/s40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_insta" />
+
+                <com.studio.makergif.utils.Helve
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/s8dp"
+                    android:text="Instagram"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/s24sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_ads"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/s65dp"
+        android:visibility="gone"></RelativeLayout>
+</LinearLayout>

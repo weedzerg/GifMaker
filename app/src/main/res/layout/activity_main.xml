@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context="com.studio.makergif.activitys.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/s70dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/s120dp"
+                android:layout_height="@dimen/s120dp"
+                android:src="@drawable/ic_laucher" />
+
+            <com.studio.makergif.utils.HelveBold
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="GIF MAKER"
+                android:textColor="@color/xanhdark"
+                android:textSize="@dimen/s40sp"
+                android:textStyle="bold" />
+
+            <com.studio.makergif.utils.Helve
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="from Video &amp; Image"
+                android:textColor="@color/whitle"
+                android:textSize="@dimen/s22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="@dimen/s80dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/s60dp"
+                android:layout_marginRight="@dimen/s60dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ln_videotogif"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/s20dp"
+                    android:layout_marginRight="@dimen/s50dp"
+                    android:layout_marginTop="@dimen/s20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_white"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/s80dp"
+                        android:layout_height="@dimen/s80dp"
+                        android:src="@drawable/ic_videotogif" />
+
+                    <com.studio.makergif.utils.Helve
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/video_to_gif"
+                        android:textColor="@color/xanhdark"
+                        android:textSize="@dimen/s20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ln_imagetogif"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/s20dp"
+                    android:layout_marginTop="@dimen/s20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_white"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/s80dp"
+                        android:layout_height="@dimen/s80dp"
+                        android:src="@drawable/ic_imgtogif" />
+
+                    <com.studio.makergif.utils.Helve
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/s5dp"
+                        android:gravity="center"
+                        android:text="@string/images_to_gif"
+                        android:textColor="@color/xanhdark"
+                        android:textSize="@dimen/s20sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/s60dp"
+                android:layout_marginRight="@dimen/s60dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ln_gif"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/s20dp"
+                    android:layout_marginRight="@dimen/s50dp"
+                    android:layout_marginTop="@dimen/s20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_white"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/s80dp"
+                        android:layout_height="@dimen/s80dp"
+                        android:src="@drawable/ic_mygif" />
+
+                    <com.studio.makergif.utils.Helve
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/s5dp"
+                        android:gravity="center"
+                        android:text="@string/my_gif"
+                        android:textColor="@color/xanhdark"
+                        android:textSize="@dimen/s20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ln_rate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/s20dp"
+                    android:layout_marginTop="@dimen/s20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bt_white"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/s80dp"
+                        android:layout_height="@dimen/s80dp"
+                        android:src="@drawable/ic_rav" />
+
+                    <com.studio.makergif.utils.Helve
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/s5dp"
+                        android:gravity="center"
+                        android:text="@string/rate"
+                        android:textColor="@color/xanhdark"
+                        android:textSize="@dimen/s20sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

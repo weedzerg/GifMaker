@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Gif Maker</string>
+    <string name="edit_video">Chỉnh Sửa Video</string>
+    <string name="edit_image">Chỉnh Sửa Ảnh</string>
+    <string name="cut_video">Cắt Video</string>
+    <string name="video">Videos</string>
+    <string name="my_video">Video Của Bạn</string>
+    <string name="images">Ảnh</string>
+    <string name="my_gif">Ảnh Gif</string>
+    <string name="album_image">Album Ảnh</string>
+    <string name="slide_gif">Trình Tạo Gif</string>
+    <string name="share">Chia sẻ</string>
+    <string name="video_to_gif">Gif từ Video</string>
+    <string name="images_to_gif">Gif từ Ảnh</string>
+    <string name="effect">Hiệu ứng</string>
+    <string name="gif">Ảnh Gif</string>
+    <string name="trim">Cắt</string>
+    <string name="apply">Thêm</string>
+    <string name="next">Tiếp</string>
+    <string name="fb_notavainle">Facebook chưa được cài đặt</string>
+    <string name="is_notavaible">Instagram chưa được cài đặt</string>
+    <string name="contentrate">Nếu bạn thích ứng dụng này, hãy dành chút thời gian để đánh giá nó. Cảm ơn sự hỗ trợ của bạn</string>
+    <string name="rate_this_app">Đánh giá ứng dụng</string>
+    <string name="not_now">Để sau</string>
+    <string name="rate">Đánh giá</string>
+    <string name="wait_for_processing">Chờ trong quá trình xử lý</string>
+    <string name="ok">Đồng ý</string>
+    <string name="high_quality">Chất lượng cao</string>
+    <string name="low_quality">Chất lượng thấp</string>
+    <string name="image_quality">Chất Lượng Hình Ảnh</string>
+    <string name="noeffect">Chưa chọn hiệu ứng</string>
+    <string name="save">Lưu</string>
+
+</resources>

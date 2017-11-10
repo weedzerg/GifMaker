@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/xanhdark1</item>
+        <item name="colorPrimaryDark">@color/xanhdark</item>
+        <item name="colorAccent">@color/xanhdark</item>
+        <item name="android:statusBarColor">#1e252a</item>
+        <item name="android:textColorPrimary">@color/whitle</item>
+        <item name="android:textColorSecondary">@color/whitle</item>
+        <item name="android:windowBackground">@color/xanhdark1</item>
+    </style>
+</resources>

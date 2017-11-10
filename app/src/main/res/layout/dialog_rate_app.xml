@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/s300dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/s16dp"
+    android:layout_marginRight="@dimen/s16dp"
+    android:background="@drawable/background_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/s20dp"
+        android:orientation="vertical"
+        android:padding="@dimen/s16dp">
+
+        <com.studio.makergif.utils.HelveBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rate_this_app"
+            android:textColor="@color/xanhdark"
+            android:textSize="@dimen/s24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/s20dp"
+            android:layout_marginTop="@dimen/s10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.studio.makergif.utils.Helve
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/s10dp"
+                android:text="@string/contentrate"
+                android:textColor="@color/xanhdark"
+                android:textSize="@dimen/s22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/s8dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.studio.makergif.utils.Helve
+                android:id="@+id/tv_not_now"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/s20dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_bluedrak1"
+                android:gravity="center"
+                android:paddingBottom="@dimen/s10dp"
+                android:paddingTop="@dimen/s10dp"
+                android:text="@string/not_now"
+                android:textColor="#fff"
+                android:textSize="@dimen/s22sp" />
+
+            <com.studio.makergif.utils.Helve
+                android:id="@+id/tv_rate_app"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/s20dp"
+                android:layout_weight="1"
+                android:background="@drawable/bt_bluedrak1"
+                android:gravity="center"
+                android:paddingBottom="@dimen/s10dp"
+                android:paddingTop="@dimen/s10dp"
+                android:text="@string/rate"
+                android:textColor="#fff"
+                android:textSize="@dimen/s22sp" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

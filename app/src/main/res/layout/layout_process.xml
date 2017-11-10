@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ln_pro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c7111111"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <com.studio.makergif.utils.Helve
+        android:id="@+id/txt"
+        android:textColor="@color/whitle"
+        android:textSize="@dimen/s24sp"
+        android:gravity="center"
+        android:text="@string/wait_for_processing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

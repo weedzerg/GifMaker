@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/banner"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="GIF MAKER"
+                android:textColor="#fff"
+                android:textSize="@dimen/s45sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="from Video &amp; Image"
+                android:textColor="#dcdcdc"
+                android:textSize="@dimen/s24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ln_videotogif"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/s30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_pink"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/s85dp"
+                        android:layout_height="@dimen/s85dp"
+                        android:src="@drawable/ic_videotogif" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/video_to_gif"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/s24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ln_imagetogif"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/s30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_vang"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/s85dp"
+                        android:layout_height="@dimen/s85dp"
+                        android:src="@drawable/ic_imagetogif" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/s5dp"
+                        android:gravity="center"
+                        android:text="@string/image_to_gif"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/s24sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ln_gif"
+                    android:gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/s30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_cyan"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/s85dp"
+                        android:layout_height="@dimen/s85dp"
+                        android:src="@drawable/ic_gif" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/s5dp"
+                        android:gravity="center"
+                        android:text="@string/my_gif"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/s24sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ln_rate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/s30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/background_blue"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/s85dp"
+                        android:layout_height="@dimen/s85dp"
+                        android:src="@drawable/ic_rate" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/s5dp"
+                        android:gravity="center"
+                        android:text="@string/rate"
+                        android:textColor="#fff"
+                        android:textSize="@dimen/s24sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

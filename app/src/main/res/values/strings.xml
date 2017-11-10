@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Gif Maker</string>
+    <string name="edit_video">Edit Video</string>
+    <string name="edit_image">Edit Image</string>
+    <string name="cut_video">Trim Video</string>
+    <string name="video">Videos</string>
+    <string name="my_video">My Videos</string>
+    <string name="images">Images</string>
+    <string name="my_gif">My Gifs</string>
+    <string name="album_image">Album Images</string>
+    <string name="slide_gif">Slide Gif</string>
+    <string name="share">Share</string>
+    <string name="video_to_gif">Video to GIF</string>
+    <string name="images_to_gif">Images to GIF</string>
+    <string name="effect">Effect</string>
+    <string name="gif">Gif</string>
+    <string name="trim">Trim</string>
+    <string name="apply">Apply</string>
+    <string name="next">Next</string>
+    <string name="fb_notavainle">Facebook not avaible</string>
+    <string name="is_notavaible">Instagram not avaible</string>
+    <string name="contentrate">If you enjoy this app. Please take a monent to rate this app. It wan\'t take more than a minute. Thank you for your support</string>
+    <string name="rate_this_app">Rate this app</string>
+    <string name="not_now">Not now!</string>
+    <string name="rate">Rate App!</string>
+    <string name="wait_for_processing">Waiting for processing...</string>
+    <string name="ok">Ok</string>
+    <string name="high_quality">High quality</string>
+    <string name="low_quality">Low quality</string>
+    <string name="image_quality">Image Quality</string>
+    <string name="noeffect">No choice Effect</string>
+    <string name="save">Save</string>
+</resources>
